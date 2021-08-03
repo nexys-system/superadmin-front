@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-boilerplate-ts/static/js/main.d3d939fc.chunk.js",
-    "main.js.map": "/react-boilerplate-ts/static/js/main.d3d939fc.chunk.js.map",
-    "runtime-main.js": "/react-boilerplate-ts/static/js/runtime-main.803a317f.js",
-    "runtime-main.js.map": "/react-boilerplate-ts/static/js/runtime-main.803a317f.js.map",
-    "static/js/2.53938377.chunk.js": "/react-boilerplate-ts/static/js/2.53938377.chunk.js",
-    "static/js/2.53938377.chunk.js.map": "/react-boilerplate-ts/static/js/2.53938377.chunk.js.map",
-    "index.html": "/react-boilerplate-ts/index.html",
-    "precache-manifest.55554a03eb5f22ae2e3d7d24d2a61f76.js": "/react-boilerplate-ts/precache-manifest.55554a03eb5f22ae2e3d7d24d2a61f76.js",
-    "service-worker.js": "/react-boilerplate-ts/service-worker.js",
-    "static/js/2.53938377.chunk.js.LICENSE.txt": "/react-boilerplate-ts/static/js/2.53938377.chunk.js.LICENSE.txt"
+    "main.js": "/superadmin-front/static/js/main.6c35b303.chunk.js",
+    "main.js.map": "/superadmin-front/static/js/main.6c35b303.chunk.js.map",
+    "runtime-main.js": "/superadmin-front/static/js/runtime-main.666c5ad5.js",
+    "runtime-main.js.map": "/superadmin-front/static/js/runtime-main.666c5ad5.js.map",
+    "static/js/2.2a31c4b7.chunk.js": "/superadmin-front/static/js/2.2a31c4b7.chunk.js",
+    "static/js/2.2a31c4b7.chunk.js.map": "/superadmin-front/static/js/2.2a31c4b7.chunk.js.map",
+    "index.html": "/superadmin-front/index.html",
+    "precache-manifest.65f1e655e46d0d4872104d58fdb7b7da.js": "/superadmin-front/precache-manifest.65f1e655e46d0d4872104d58fdb7b7da.js",
+    "service-worker.js": "/superadmin-front/service-worker.js",
+    "static/js/2.2a31c4b7.chunk.js.LICENSE.txt": "/superadmin-front/static/js/2.2a31c4b7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.803a317f.js",
-    "static/js/2.53938377.chunk.js",
-    "static/js/main.d3d939fc.chunk.js"
+    "static/js/runtime-main.666c5ad5.js",
+    "static/js/2.2a31c4b7.chunk.js",
+    "static/js/main.6c35b303.chunk.js"
   ]
 }
