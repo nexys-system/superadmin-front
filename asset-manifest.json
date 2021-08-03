@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/superadmin-front/static/js/main.6c35b303.chunk.js",
-    "main.js.map": "/superadmin-front/static/js/main.6c35b303.chunk.js.map",
+    "main.js": "/superadmin-front/static/js/main.42989ca2.chunk.js",
+    "main.js.map": "/superadmin-front/static/js/main.42989ca2.chunk.js.map",
     "runtime-main.js": "/superadmin-front/static/js/runtime-main.666c5ad5.js",
     "runtime-main.js.map": "/superadmin-front/static/js/runtime-main.666c5ad5.js.map",
-    "static/js/2.2a31c4b7.chunk.js": "/superadmin-front/static/js/2.2a31c4b7.chunk.js",
-    "static/js/2.2a31c4b7.chunk.js.map": "/superadmin-front/static/js/2.2a31c4b7.chunk.js.map",
+    "static/js/2.c0eac16a.chunk.js": "/superadmin-front/static/js/2.c0eac16a.chunk.js",
+    "static/js/2.c0eac16a.chunk.js.map": "/superadmin-front/static/js/2.c0eac16a.chunk.js.map",
     "index.html": "/superadmin-front/index.html",
-    "precache-manifest.65f1e655e46d0d4872104d58fdb7b7da.js": "/superadmin-front/precache-manifest.65f1e655e46d0d4872104d58fdb7b7da.js",
+    "precache-manifest.6579f5d515442c574f8be7b163015b8a.js": "/superadmin-front/precache-manifest.6579f5d515442c574f8be7b163015b8a.js",
     "service-worker.js": "/superadmin-front/service-worker.js",
-    "static/js/2.2a31c4b7.chunk.js.LICENSE.txt": "/superadmin-front/static/js/2.2a31c4b7.chunk.js.LICENSE.txt"
+    "static/js/2.c0eac16a.chunk.js.LICENSE.txt": "/superadmin-front/static/js/2.c0eac16a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.666c5ad5.js",
-    "static/js/2.2a31c4b7.chunk.js",
-    "static/js/main.6c35b303.chunk.js"
+    "static/js/2.c0eac16a.chunk.js",
+    "static/js/main.42989ca2.chunk.js"
   ]
 }
