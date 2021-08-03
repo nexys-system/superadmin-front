@@ -1,6 +1,6 @@
 import { Id, Uuid } from '@nexys/material-components/dist/common/type';
 import { Stateful } from '@nexys/material-components';
-import { instanceUuid, withBackend } from 'config';
+import { withBackend } from 'config';
 
 import * as T from './type';
 import * as U from './utils';
@@ -42,7 +42,7 @@ export const insert = async (
     email: data.email!,
     status: { id: data.status!.id },
     instance: {
-      uuid: instanceUuid
+      uuid: 'myuuid'
     }
   };
 

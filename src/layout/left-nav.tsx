@@ -1,7 +1,13 @@
 import React from 'react';
 
 // Icon import
-import Dashboardicon from '@material-ui/icons/Dashboard';
+import {
+  Group as InvestorIcon,
+  VpnKey as PermissionIcon,
+  Storage as InstanceIcon,
+  AccountTree as EntityIcon,
+  Apps as AppsIcon
+} from '@material-ui/icons';
 // end icon
 
 import { UI, Stateful, Utils } from '@nexys/material-components';
@@ -33,22 +39,42 @@ const {
   }
 } = UI;
 
+const superAdminPermission = 'superadmin';
+
 const Label = ({ children }: { children: React.ReactNode }): JSX.Element => {
   const classes = useStyles();
 
   return <span className={classes.label}>{children}</span>;
 };
 
-const listMain: TMenu[] = [
+const listSuperAdmin: TMenu[] = [
   {
-    link: Link.App.dashboard,
-    label: <Label>Dashboard</Label>,
-    Icon: Dashboardicon,
-    permission: 'app'
+    link: Link.SuperAdmin.base,
+    label: <Label>Superadmin Dashboard</Label>,
+    Icon: AppsIcon,
+    permission: superAdminPermission
+  },
+  {
+    link: Link.SuperAdmin.permission,
+    label: <Label>Permissions</Label>,
+    Icon: PermissionIcon,
+    permission: superAdminPermission
+  },
+  {
+    link: Link.SuperAdmin.instance,
+    label: <Label>Instance</Label>,
+    Icon: InstanceIcon,
+    permission: superAdminPermission
+  },
+  {
+    link: Link.SuperAdmin.entity,
+    label: <Label>Entities</Label>,
+    Icon: EntityIcon,
+    permission: superAdminPermission
   }
 ];
 
-export default () => {
+export default ({ isOpen }: { isOpen: boolean }) => {
   const classes = useStyles();
 
   // list of permissions from profile
@@ -67,14 +93,13 @@ export default () => {
 
   return (
     <Drawer
-      isOpen={true}
+      isOpen={isOpen}
       onClose={() => {}}
       classNames={{ paper: classes.drawer }}
       hideToggleButton={true}
     >
-      <Divider />
       <Menu
-        list={listMain.filter(x => permissions.includes(x.permission))}
+        list={listSuperAdmin.filter(x => permissions.includes(x.permission))}
         classNames={{ icon: classes.menuItem, item: classes.menuItem }}
       />
     </Drawer>

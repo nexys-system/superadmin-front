@@ -1,7 +1,7 @@
 import { Uuid } from '@nexys/material-components/dist/common/type';
 import { Stateful } from '@nexys/material-components';
 
-import { instanceUuid, withBackend } from 'config';
+import { withBackend } from 'config';
 import * as CT from 'interface/crud/config';
 import * as T from './type';
 import * as U from './utils';
@@ -31,7 +31,7 @@ export const list = async (
       references: {
         PermissionInstance: {
           projection: { uuid: true, instance: { uuid: true } },
-          filters: { instance: { uuid: pInstanceUuid || instanceUuid } },
+          filters: { instance: { uuid: pInstanceUuid || 'myuuid' } },
           references: {
             UserPermission: {
               projection: { uuid: true },
@@ -51,7 +51,7 @@ export const list = async (
       (x: any) =>
         (x.PermissionInstance &&
           x.PermissionInstance[0].instance.uuid === pInstanceUuid) ||
-        instanceUuid
+        'uuid'
     )
   );
 };
@@ -67,7 +67,7 @@ export const insert = async (
 
   const permissionInstance = await CPermissionInstance.detail({
     permission: { uuid: permissionUuid },
-    instance: { uuid: pInstanceUuid || instanceUuid }
+    instance: { uuid: pInstanceUuid || 'uuid' }
   });
 
   const data = {
@@ -88,7 +88,7 @@ export const deletePermission = async (
 
   const permissionInstance = await CPermissionInstance.detail({
     permission: { uuid: permissionUuid },
-    instance: { uuid: instanceUuid }
+    instance: { uuid: 'uuid' }
   });
 
   return C.delete({

@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Switch,
   Route,
-  Redirect,
   withRouter,
   RouteComponentProps
 } from 'react-router-dom';
@@ -10,16 +9,13 @@ import {
 import { Stateful, Utils } from '@nexys/material-components';
 import * as Links from 'common/link';
 
-import NotFound from '../public/not-found-404';
-import Layout from '../admin/layout';
+import Layout from '../layout';
 import SuperAdmin from './superadmin';
 
 const {
   Auth: { Wrapper },
   Conf: { REDIRECT_URI }
 } = Stateful;
-
-const toRoute = (r = '/') => Links.Admin.base + r;
 
 function SuperAdminRoutes(props: RouteComponentProps) {
   const handleOnIdle = () => {
@@ -34,11 +30,6 @@ function SuperAdminRoutes(props: RouteComponentProps) {
     <Layout>
       <Switch>
         <Route path={Links.SuperAdmin.base} component={SuperAdmin} />
-
-        <Route path={toRoute('/')}>
-          <Redirect to={Links.Admin.dashboard} />
-        </Route>
-        <Route path={toRoute()} component={NotFound} />
       </Switch>
     </Layout>
   );
