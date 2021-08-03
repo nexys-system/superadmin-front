@@ -2,7 +2,6 @@ import React from 'react';
 
 // Icon import
 import {
-  Group as InvestorIcon,
   VpnKey as PermissionIcon,
   Storage as InstanceIcon,
   AccountTree as EntityIcon,
