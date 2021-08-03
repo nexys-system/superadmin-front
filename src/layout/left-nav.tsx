@@ -34,7 +34,7 @@ interface TMenu {
 
 const {
   Nav: {
-    Left: { Drawer, Menu, Divider }
+    Left: { Drawer, Menu }
   }
 } = UI;
 
